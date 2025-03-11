@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cloudflare-agent-demo",
+  "main": "test/server.ts",
+  "compatibility_date": "2025-03-10",
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "IntelligentTestAgent",
+        "class_name": "IntelligentTestAgent",
+      },
+    ],
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      // Mandatory for the Agent to store state
+      "new_sqlite_classes": ["IntelligentTestAgent"],
+    },
+  ],
+}
