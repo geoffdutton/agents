@@ -1,4 +1,4 @@
-import { Agent, routeAgentRequest } from "../src/index";
+import { Agent, routeAgentRequest } from "../../../packages/agents/src/index";
 
 export class IntelligentTestAgent extends Agent<Env> {
   async onRequest(request: Request) {

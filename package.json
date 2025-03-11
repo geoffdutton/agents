@@ -16,7 +16,7 @@
     "build": "npm run build -w agents-sdk -w hono-agents",
     "format": "prettier --write .",
     "check": "sherif && prettier --check . && biome lint && tsc",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "license": "MIT",
   "version": "0.0.0",
@@ -28,6 +28,7 @@
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.28.1",
     "@cloudflare/vite-plugin": "0.1.9",
+    "@cloudflare/vitest-pool-workers": "^0.7.8",
     "@cloudflare/workers-types": "^4.20250303.0",
     "@types/node": "^22.13.10",
     "@types/react": "^19.0.10",
