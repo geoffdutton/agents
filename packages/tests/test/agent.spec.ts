@@ -18,6 +18,7 @@ describe("agents", () => {
 
   it("should pass a basic test", () => {
     expect(true).toBe(true);
+    expect(env).toBeDefined();
   });
 
   it("should handle string operations", () => {
