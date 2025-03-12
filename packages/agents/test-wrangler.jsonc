@@ -1,7 +1,7 @@
 {
   "$schema": "../../node_modules/wrangler/config-schema.json",
   "name": "cloudflare-agent-demo",
-  "main": "test/server.ts",
+  "main": "./src/server-for-check.ts",
   "compatibility_date": "2025-03-10",
   "durable_objects": {
     "bindings": [

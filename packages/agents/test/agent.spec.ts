@@ -1,11 +1,7 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
-// import {
-//   createExecutionContext,
-//   env,
-//   waitOnExecutionContext,
-// } from "cloudflare:test";
+import { env } from "cloudflare:test";
 
-// import app from "./server";
+import app from "../src/server-for-check";
 
 describe("agents", () => {
   // let ctx: ExecutionContext;
