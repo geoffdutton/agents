@@ -41,14 +41,12 @@ Notice how "Users/geoff/.." doesn't start with a "/" like "/Users/geoff/..", so 
 
 export default defineWorkersConfig({
   test: {
-    include: ["packages/agents/test/*.spec.ts"],
+    include: ["./test/**/*.spec.ts"],
     poolOptions: {
       workers: {
-        main: "packages/agents/src/server-for-check.ts",
         singleWorker: true,
-        miniflare: {
-          main: "packages/agents/src/server-for-check.ts",
-          compatibilityDate: "2025-03-10",
+        wrangler: {
+          configPath: "./wrangler.jsonc",
         },
       },
     },

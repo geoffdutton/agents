@@ -1,8 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { env } from "cloudflare:test";
 
-import app from "../src/server-for-check";
-
 describe("agents", () => {
   // let ctx: ExecutionContext;
   // beforeEach(() => {

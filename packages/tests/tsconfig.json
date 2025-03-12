@@ -1,11 +1,11 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "moduleResolution": "bundler",
     "types": [
       "@cloudflare/workers-types/experimental",
       "@cloudflare/vitest-pool-workers"
     ]
   },
-  "include": ["./**/*.ts", "../worker-configuration.d.ts"],
-  "exclude": []
+  "include": ["./**/*.ts", "./vitest.config.mts", "./test/env.d.ts"]
 }

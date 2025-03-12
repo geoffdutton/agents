@@ -1,0 +1,12 @@
+{
+  "name": "agents-sdk-tests",
+  "version": "0.0.17",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "vitest run"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "Agents tests"
+}
